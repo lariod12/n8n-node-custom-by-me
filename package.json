@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-artella",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node to create contacts in SendGrid",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://n8n.io",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "thinh",
+    "email": "thinh@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/huythinh12/n8n-node-custom-by-me.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/ArtellaApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/Artella/Artella.node.js"
     ]
   },
   "devDependencies": {
@@ -48,5 +46,8 @@
     "n8n-workflow": "*",
     "prettier": "^2.7.1",
     "typescript": "~4.8.4"
+  },
+  "dependencies": {
+    "n8n": "^0.221.2"
   }
 }
